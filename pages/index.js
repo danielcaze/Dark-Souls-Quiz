@@ -1,17 +1,18 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
-import Head from 'next/head';
 
-//const BackgroundImage = styled.div`
+// const BackgroundImage = styled.div`
 //  background-image: url(${db.bg});
 //  flex: 1;
 //  background-size: cover;
 //  background-position: center
-//`;
+// `;
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -27,17 +28,31 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-    <Head>
-      <title>Quiz: Dark Souls | Home</title>
-    </Head>
+      <Head>
+        <title>Quiz: Dark Souls</title>
+        <meta name="title" content="Quiz: Dark Souls" />
+        <meta name="description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dark-souls-quiz.darrow.vercel.app/" />
+        <meta property="og:title" content="Quiz: Dark Souls" />
+        <meta property="og:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dark-souls-quiz.darrow.vercel.app/" />
+        <meta property="twitter:title" content="Quiz: Dark Souls" />
+        <meta property="twitter:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
+        <meta property="twitter:image" content=""></meta>
+      </Head>
       <QuizContainer>
 
         <Widget>
-         <Widget.Header>
+          <Widget.Header>
             <h1>Dark Souls</h1>
           </Widget.Header>
           <Widget.Content>
-           <p>O jogo mais difícil do mundo</p>
+            <p>O jogo mais difícil do mundo</p>
           </Widget.Content>
         </Widget>
 
