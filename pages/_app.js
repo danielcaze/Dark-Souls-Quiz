@@ -44,12 +44,6 @@ export default function App({ Component, pageProps }) {
         <meta property="og:title" content="Quiz: Dark Souls" />
         <meta property="og:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
         <meta property="og:image" content="" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dark-souls-quiz.darrooooow.vercel.app/" />
-        <meta property="twitter:title" content="Quiz: Dark Souls" />
-        <meta property="twitter:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-        <meta property="twitter:image" content="" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
