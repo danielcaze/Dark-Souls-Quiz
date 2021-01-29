@@ -6,6 +6,9 @@ import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
+import Input from '../src/components/Input';
+import QuizLogo from '../src/components/QuizLogo';
+import Button from '../src/components/Button';
 import { useRouter } from 'next/router';
 
 // const BackgroundImage = styled.div`
@@ -52,10 +55,10 @@ export default function Home() {
         <meta property="twitter:image" content="https://i.imgur.com/v5Zf6FK.jpeg" />
       </Head>
       <QuizContainer>
-
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Dark Souls</h1>
+            <h1>Quiz: Dark Souls</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (infosDoEvento) {
@@ -65,19 +68,15 @@ export default function Home() {
 
               // router manda para a próxima página
             }}>
-              <input  
-              onChange={function (infosDoEvento) {
-                console.log(infosDoEvento.target.value)
-                // State
-                // name = infosDoEvento.target.value;
-                setName(infosDoEvento.target.value);
-              }}
-              placeholder="Insira um nome." 
+              <Input  
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Insira um nome."
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar 
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Vamos jogar,  ${name}?`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
@@ -91,7 +90,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/Darrooooow/Dark-Souls-Quiz" />
+      <GitHubCorner projectUrl="https://github.com/Darrooooow" />
     </QuizBackground>
   );
 }
