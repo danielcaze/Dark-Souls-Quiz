@@ -4,7 +4,6 @@ import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
 import Head from 'next/head';
 
 //const BackgroundImage = styled.div`
@@ -29,10 +28,10 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
     <Head>
-      <title>Quiz: Dark Souls</title>
+      <title>Quiz: Dark Souls | Home</title>
     </Head>
       <QuizContainer>
-        <QuizLogo />
+
         <Widget>
          <Widget.Header>
             <h1>Dark Souls</h1>
