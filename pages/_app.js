@@ -34,16 +34,6 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-
-        <title>Quiz: Dark Souls</title>
-        <meta name="title" content="Quiz: Dark Souls" />
-        <meta name="description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dark-souls-quiz.darrooooow.vercel.app/" />
-        <meta property="og:title" content="Quiz: Dark Souls" />
-        <meta property="og:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-        <meta property="og:image" content="" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
