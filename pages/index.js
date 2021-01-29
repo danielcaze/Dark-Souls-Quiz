@@ -29,21 +29,22 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Quiz: Dark Souls</title>
-        <meta name="title" content="Quiz: Dark Souls" />
+              
+        <title>DARK SOULS: Prepare to Quiz Edition</title>
+        <meta name="title" content="DARK SOULS: Prepare to Quiz Edition" />
         <meta name="description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-
+        
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dark-souls-quiz.darrow.vercel.app/" />
-        <meta property="og:title" content="Quiz: Dark Souls" />
+        <meta property="og:url" content="https://dark-souls-quiz.darrooooow.vercel.app/" />
+        <meta property="og:title" content="DARK SOULS: Prepare to Quiz Edition" />
         <meta property="og:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://i.imgur.com/v5Zf6FK.jpeg" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dark-souls-quiz.darrow.vercel.app/" />
-        <meta property="twitter:title" content="Quiz: Dark Souls" />
+        <meta property="twitter:url" content="https://dark-souls-quiz.darrooooow.vercel.app/" />
+        <meta property="twitter:title" content="DARK SOULS: Prepare to Quiz Edition" />
         <meta property="twitter:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-        <meta property="twitter:image" content=""></meta>
+        <meta property="twitter:image" content="https://i.imgur.com/v5Zf6FK.jpeg" />
       </Head>
       <QuizContainer>
 
