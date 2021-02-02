@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -9,7 +11,6 @@ import QuizBackground from '../src/components/QuizBackground';
 import Input from '../src/components/Input';
 import QuizLogo from '../src/components/QuizLogo';
 import Button from '../src/components/Button';
-import { useRouter } from 'next/router';
 
 // const BackgroundImage = styled.div`
 //  background-image: url(${db.bg});
@@ -18,7 +19,7 @@ import { useRouter } from 'next/router';
 //  background-position: center
 // `;
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -32,22 +33,17 @@ export const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
-
-  
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-              
-        <title>DARK SOULS: Prepare to Quiz Edition</title>
+        <title>{db.title}</title>
         <meta name="title" content="DARK SOULS: Prepare to Quiz Edition" />
         <meta name="description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
-        
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dark-souls-quiz.darrooooow.vercel.app/" />
         <meta property="og:title" content="DARK SOULS: Prepare to Quiz Edition" />
         <meta property="og:description" content="Você acha que sabe tudo de Dark Souls? Encare esse quiz e descubra!" />
         <meta property="og:image" content="https://i.imgur.com/v5Zf6FK.jpeg" />
-
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://dark-souls-quiz.darrooooow.vercel.app/" />
         <meta property="twitter:title" content="DARK SOULS: Prepare to Quiz Edition" />
@@ -67,8 +63,9 @@ export default function Home() {
               console.log('Fazendo uma submissão por meio do react');
 
               // router manda para a próxima página
-            }}>
-              <Input  
+            }}
+            >
+              <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Insira um nome."

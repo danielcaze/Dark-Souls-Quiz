@@ -1,28 +1,30 @@
 {
     "bg": "https://vulcan.dl.playstation.net/img/rnd/202010/0919/PkDgnH2X13epQh28GW19Kvlm.jpg",
-    "title": "Quiz Dark Souls",
+    "title": "DARK SOULS: Prepare to Quiz Edition",
     "description": "Teste os seus conhecimentos sobre o jogo mais difícil do mundo e vejamos quantas vezes você vai morrer... Digo, perder nesse desafio",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F66.media.tumblr.com%2Fda8ce2bdda2e8923842c2d299e4d0944%2Ftumblr_mph4ut5qW71r38194o1_500.png&f=1&nofb=1",
+        "title": "Quem fica esperando na frente da Sen's Fortress?",
+        "description": "Essa é pra aquecer!",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Sieglinde of Catarina",
+          "Siegmeyer of Catarina",
+          "Siegward of Catarina",
+          "Ninguém"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://i.imgur.com/x9CNBAM.jpg",
+        "title": "Qual é o primeiro boss do jogo?",
+        "description": "Dizem por aí que o boss do tutorial não conta, mas... Será mesmo?",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Asylum Demon",
+           "Bell Gargoyle",
+           "Taurus Demon",
+           "Chaos Witch Quelaag"
         ]
       }
     ],
