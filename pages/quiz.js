@@ -8,16 +8,18 @@ import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
 
 function LoadingWidget() {
-    return (
-        <Widget>
-            <Widget.Header>
-                Carregando...
-            </Widget.Header>
+  return (
+    <Widget>
+        <Widget.Header>
+            Carregando...
+        </Widget.Header>
 
-            <Widget.Content>
-                Desafio carregando
-            </Widget.Content>
-        </Widget>
+
+        <Widget.Content>
+
+            Desafio carregando
+        </Widget.Content>
+    </Widget>
     );
 }
 
@@ -28,8 +30,11 @@ function QuestionWidget({
     onSubmit,
 }) {
     const [selectedAlternative, setSelectedAlternative] = React.useState(undefined);
-
+    const [isQuestionSubmited, setIsQuestionSubmited] = React.useState();
     const questionId = `question__${questionIndex}`;
+    const isCorrect = selectedAlternative === question.answer;
+    const hasAlternativeSelected = selectedAlternative === undefined;
+
     return(
         <Widget>
             <Widget.Header>
@@ -59,8 +64,14 @@ function QuestionWidget({
             <form 
             onSubmit={(infosDoEvento) => {
                 infosDoEvento.preventDefault();
-                onSubmit();
-            }}>
+                setIsQuestionSubmited(true);
+                setTimeout(() => {
+                    onSubmit();
+                    setIsQuestionSubmited(false);
+                    setSelectedAlternative(undefined);
+                }, 3 * 1000);
+            }}
+            >
             {question.alternatives.map((alternative, alternativeIndex) => {
                 console.log('Para de de reclamar')
                 const alternativeId = `alternative__${alternativeIndex}`;
@@ -74,7 +85,7 @@ function QuestionWidget({
                             // style={{ display: 'none' }}
                             id={alternativeId}
                             name={questionId}
-                            onChange={() => setSelectedAlternative()}
+                            onChange={() => setSelectedAlternative(alternativeIndex)}
                             type="radio"
                         />
                         {alternative}
@@ -82,27 +93,27 @@ function QuestionWidget({
                 );
             })}
 
-            <pre>
+            {/* <pre>
             {JSON.stringify(question, null, 4)}
-            </pre>
+            </pre> */}
 
-            <Button type="submit">
+            <Button type="submit" disabled={!hasAlternativeSelected}>
                 Confirmar
             </Button>
-
-            <p>Você acertou!</p>
-            <p>Você errou!</p>
+            {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+            {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
             </form>
         </Widget.Content>
     </Widget>
     );
 }
 
-const screenStates = {
-    QUIZ: 'QUIZ',
-    LOADING: 'LOADING',
-    RESULT: 'RESULT',
-};
+    const screenStates = {
+        QUIZ: 'QUIZ',
+        LOADING: 'LOADING',
+        RESULT: 'RESULT',
+    };
+
 export default function QuizPage() {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
     // console.log('Perguntas criadas: ', db.questions);
