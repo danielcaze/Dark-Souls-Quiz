@@ -35,6 +35,7 @@ function QuestionWidget({
     const isCorrect = selectedAlternative === question.answer;
     const hasAlternativeSelected = selectedAlternative === undefined;
 
+
     return(
         <Widget>
             <Widget.Header>
@@ -116,6 +117,7 @@ function QuestionWidget({
 
 export default function QuizPage() {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+    const [results, setResult] = React.useState([]);
     // console.log('Perguntas criadas: ', db.questions);
     const totalQuestions = db.questions.length;
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
