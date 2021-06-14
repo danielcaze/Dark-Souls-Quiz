@@ -1,4 +1,4 @@
-## Deploy your own
+<!-- ## Deploy your own
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
@@ -19,3 +19,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 ### Try it on CodeSandbox
 
 [Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+-->
