@@ -1,3 +1,6 @@
+<p align="center"><img src="https://github.com/darrow12/Dark-Souls-Quiz/blob/main/public/dark_souls_prepare_to_quiz_logo.png" width="70%"></p>
+
+<p align="center">Do you think you know everything about the hardest game in the world, chosen undead?</p>
 <!-- ## Deploy your own
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
