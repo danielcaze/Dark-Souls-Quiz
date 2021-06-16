@@ -13,7 +13,7 @@ See a real demo of this project at Vercel.
 
 <br />
 
-PS: Project not ready yet.
+⚠️ The project is not ready yet.
 
 <!-- ## Deploy your own
 
