@@ -9,6 +9,8 @@
 
 I love Dark Souls, so why not take a quiz about it? So. This quiz is about the first and third game. The questions are for game players, but those who have played the least will also know how to answer.
 
+Also, this project was created during Alura's React and Next.JS Immersion
+
 ## Demo
 
 See a real demo of this project at Vercel.
