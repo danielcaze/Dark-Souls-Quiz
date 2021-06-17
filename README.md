@@ -11,6 +11,8 @@ I love Dark Souls, so why not take a quiz about it? So. This quiz is about the f
 
 Also, this project was created during Alura's React and Next.JS Immersion.
 
+<br />
+
 ## Demo
 
 See a real demo of this project at Vercel.
