@@ -17,6 +17,8 @@ Also, this project was created during Alura's React and Next.JS Immersion.
 
 See the layout project on <a href="https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1">Figma</a>.
 
+<br />
+
 ## Demo
 
 See a real demo of this project at Vercel.
