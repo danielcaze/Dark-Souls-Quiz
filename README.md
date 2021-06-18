@@ -15,7 +15,7 @@ Also, this project was created during Alura's React and Next.JS Immersion.
 
 ## Layout
 
-See the layout project on Figma (an account is required to access it).
+See the layout project on Figma (an account is required to access it). Of course, the layout wasn't done by me.
 
 <a href="https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1">
   <img alt="Figma layout" src="https://img.shields.io/badge/figma%20-%236E40C9.svg?color=000000&style=for-the-badge&logo=figma&logoColor=dark-orange"/>
@@ -30,6 +30,7 @@ See a real demo of this project at Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://dark-souls-quiz-darrooooow.vercel.app/)
 
+<br />
 <br />
 
 ⚠️ The project is not ready yet.
