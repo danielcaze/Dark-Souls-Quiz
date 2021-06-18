@@ -15,7 +15,11 @@ Also, this project was created during Alura's React and Next.JS Immersion.
 
 ## Layout
 
-See the layout project on <a href="https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1">Figma</a>.
+See the layout project on <a href="https://www.figma.com">Figma</a>.
+
+<a href="https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1">
+  <img alt="Figma layout" src="https://img.shields.io/badge/figma%20-%236E40C9.svg?color=000000&style=for-the-badge&logo=figma&logoColor=dark-orange"/>
+</a>
 
 <br />
 
