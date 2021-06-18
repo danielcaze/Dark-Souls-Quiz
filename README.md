@@ -22,6 +22,7 @@ See the layout project on Figma (an account is required to access it).
 </a>
 
 <br />
+<br />
 
 ## Demo
 
