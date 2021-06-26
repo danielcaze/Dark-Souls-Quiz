@@ -36,8 +36,8 @@ See a real demo of this project at Vercel.
 ## Technologies
 
 * ReactJS
-* Styled-components
 * Next.js
+* Styled-components
 
 <br />
 <br />
