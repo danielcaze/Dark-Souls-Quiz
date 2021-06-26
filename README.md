@@ -33,6 +33,12 @@ See a real demo of this project at Vercel.
 <br />
 <br />
 
+## Technologies
+
+* ReactJS
+* Styled-components
+* Next.js
+
 ⚠️ The project is not ready yet.
 
 <!-- ## Deploy your own
