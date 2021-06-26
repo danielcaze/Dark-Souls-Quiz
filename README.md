@@ -39,6 +39,9 @@ See a real demo of this project at Vercel.
 * Styled-components
 * Next.js
 
+<br />
+<br />
+
 ⚠️ The project is not ready yet.
 
 <!-- ## Deploy your own
